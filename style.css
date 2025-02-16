@@ -1,11 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    padding-top: 15px;
     background-color: black;
 }
 
@@ -20,7 +13,7 @@ nav {
 ul li {
     background-color: lightgreen;
     position: relative;
-    margin: 0 0px;
+    margin: 0;
     list-style: none;
     display: inline-block;
     cursor: pointer;
@@ -31,7 +24,7 @@ a {
     background-color: lightgreen;
 }
 
-section {
+.header {
     background-color: lightgreen;
     width: 70%;
     margin: 0 auto;
@@ -39,3 +32,4 @@ section {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
