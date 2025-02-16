@@ -12,6 +12,58 @@
 </head>
 
 <body>
+    <div id="loading-screen">
+        <div id="hello-text"></div>
+    </div>
+    <script>
+        const helloTranslations = [
+            { language: 'English', text: 'Hello' },
+            { language: 'Spanish', text: 'Hola' },
+            { language: 'French', text: 'Bonjour' },
+            { language: 'German', text: 'Hallo' },
+            { language: 'Italian', text: 'Ciao' },
+            { language: 'Chinese', text: '你好' },
+            { language: 'Arabic', text: 'مرحبًا' },
+            { language: 'Turkish', text: 'Merhaba' },
+            { language: 'Korean', text: '안녕하세요' },
+            { language: 'Dutch', text: 'Hallo' },
+            { language: 'Greek', text: 'Γειά σου' },
+            { language: 'Swedish', text: 'Hej' },
+            { language: 'Japanese', text: 'こんにちは' },
+        ];
+
+        const helloText = document.getElementById('hello-text');
+        let currentIndex = 0;
+
+        function showNextHello() {
+            if (currentIndex < helloTranslations.length) {
+                const translation = helloTranslations[currentIndex];
+                helloText.textContent = `${translation.text}`;
+                helloText.style.opacity = 0;
+                setTimeout(() => {
+                    helloText.style.opacity = 1;
+                }, 100);
+                currentIndex++;
+                setTimeout(showNextHello, 300); // Flash duration
+            } else {
+                // End of sequence, show content
+                const loadingScreen = document.getElementById('loading-screen');
+                const content = document.getElementById('content');
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                    content.style.display = 'block';
+                }, 1000);
+            }
+        }
+
+        // Start the flashing sequence
+        showNextHello();
+    </script>
+
+
+
+
     <div class="header">    
         <nav>
             <img src="./Image/RN-Logo-Light-Mode.png" height="50px" id="logo" alt="logo">
