@@ -1,3 +1,7 @@
+*{
+    font-family: 'Arial', sans-serif;
+}
+
 body {
     background-color: black;
 }
@@ -63,14 +67,14 @@ a {
 }
 
 .column3 {
-    padding-bottom: 65px;
+    padding-bottom: 53px;
     padding-top: 5px;
     padding-left: 70px;
     padding-right: 110px;
 }
 
 #avatar {
-    padding-top: 50px;
+    padding-top: 10px;
     display: block;
     margin: 0 auto;
     border-radius: 50%;
