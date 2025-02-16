@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 15px;
+    background-color: black;
+}
+
+nav {
+    background-color: lightgreen;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul li {
+    background-color: lightgreen;
+    position: relative;
+    margin: 0 0px;
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    background-color: lightgreen;
+}
+
+section {
+    background-color: lightgreen;
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
