@@ -37,6 +37,11 @@ a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+#icon:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+}
+
 .container {
     width: 76%;
     margin: 1px auto; /* Added margin to create space between header and container */
@@ -68,6 +73,7 @@ a {
 
 #language-icon:hover {
     transform: scale(1.2);
+    transition: transform 0.2s ease;
 }
 
 .column3 {
@@ -119,6 +125,12 @@ a {
     padding: 5px 85px 5px 10px; /* Adjusted padding for consistent spacing */
 }
 
+.tab1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
 .tab2 {
     background-color: lightgreen;
     width: 40%;
@@ -126,6 +138,12 @@ a {
     margin-top: 10px;
     margin-left: 10px; /* Added margin to create space between tabs */
     padding: 5px 85px 5px 10px; /* Adjusted padding for consistent spacing */
+}
+
+.tab2:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .experience #tab1img{
@@ -144,7 +162,9 @@ a {
     display: block;
     margin: 0 auto;
     border-radius: 20px;
-    width: 460px;
+   /* width: 460px;
+    height: 250px;*/
+    width: 250px;
     height: 250px;
     object-fit: cover;
     text-align: center;
