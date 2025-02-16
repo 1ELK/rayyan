@@ -66,6 +66,10 @@ a {
     padding-right: 200px;
 }
 
+#language-icon:hover {
+    transform: scale(1.2);
+}
+
 .column3 {
     padding-bottom: 53px;
     padding-top: 5px;
@@ -83,4 +87,3 @@ a {
     object-fit: cover;
     text-align: center;
 }
-
