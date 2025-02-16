@@ -62,15 +62,15 @@ a {
 .column1 {
     padding-bottom: 5px;
     padding-top: 5px;
-    padding-left: 50px;
-    padding-right: 200px;
+    padding-left: 25px;
+    padding-right: 225px;
 }
 
 .column2 {
     padding-bottom: 5px;
     padding-top: 5px;
-    padding-left: 50px;
-    padding-right: 200px;
+    padding-left: 25px;
+    padding-right: 225px;
 }
 
 #language-icon:hover {
@@ -249,7 +249,7 @@ a {
     transition: transform 0.3s ease;
 }
 
-h2 {
+#h2-title {
     text-align: center;
     font-size: x-large;
 }
