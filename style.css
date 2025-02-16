@@ -1,5 +1,5 @@
 *{
-    font-family: 'Arial', sans-serif;
+    font-family:'Courier New', Courier, monospace;
 }
 
 body {
@@ -71,7 +71,7 @@ a {
 }
 
 .column3 {
-    padding-bottom: 53px;
+    padding-bottom: 73px;
     padding-top: 5px;
     padding-left: 70px;
     padding-right: 110px;
@@ -86,4 +86,80 @@ a {
     height: 250px;
     object-fit: cover;
     text-align: center;
+}
+
+.experienceTab {
+    background-color: lightgreen;
+    width: 70%;
+    margin: 0 auto;
+    padding: 5px 30px  5px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.experienceTab p {
+    text-align: center;
+    font-size: xx-large;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.experience {
+    width: 74%;
+    margin: 1px auto; /* Added margin to create space between header and container */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab1 {
+    background-color: lightgreen;
+    width: 40%;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px 85px 5px 10px; /* Adjusted padding for consistent spacing */
+}
+
+.tab2 {
+    background-color: lightgreen;
+    width: 40%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px; /* Added margin to create space between tabs */
+    padding: 5px 85px 5px 10px; /* Adjusted padding for consistent spacing */
+}
+
+.experience #tab1img{
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    width: 460px;
+    height: 250px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.experience #tab2img{
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    width: 460px;
+    height: 250px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.tab1 p {
+    text-align: right;
+    font-size: large;
+    font-family:'Courier New', Courier, monospace;
+    display: inline;
+}
+
+.tab2 p {
+    text-align: right;
+    font-size: large;
+    font-family:'Courier New', Courier, monospace;
+    display: inline;
 }
