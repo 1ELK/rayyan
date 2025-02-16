@@ -1,5 +1,6 @@
 *{
     font-family:'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -39,7 +40,8 @@ a {
 
 #icon:hover {
     transform: scale(1.2);
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease;
+
 }
 
 .container {
@@ -73,7 +75,7 @@ a {
 
 #language-icon:hover {
     transform: scale(1.2);
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease;
 }
 
 .column3 {
@@ -128,7 +130,7 @@ a {
 .tab1:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tab2 {
@@ -138,12 +140,13 @@ a {
     margin-top: 10px;
     margin-left: 10px; /* Added margin to create space between tabs */
     padding: 5px 85px 5px 10px; /* Adjusted padding for consistent spacing */
+    pointer-events: none; /* Disabled pointer events to prevent hover effect */
 }
 
 .tab2:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .experience #tab1img{
@@ -182,4 +185,100 @@ a {
     font-size: large;
     font-family:'Courier New', Courier, monospace;
     display: inline;
+}
+
+.contacttab {
+    background-color: lightgreen;
+    width: 70%;
+    margin: 10px auto; /* Added margin to create space at the top */
+    padding: 10px 30px 5px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contacttab p {
+    text-align: center;
+    font-size: xx-large;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.contact{
+    width: 74%;
+    margin: 1px auto; /* Added margin to create space between header and container */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactimg {
+    background-color: lightgreen;
+    width: 20%;
+    border-radius: 10px;
+    padding: 5px;
+    display: block;
+    height: 150px;
+    width: 150px;
+    padding: 0 0 0 0;
+    object-fit: cover;
+}
+
+.contactimg img {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.contactinfo {
+    background-color: lightgreen;
+    width:744px;
+    border-radius: 10px;
+    padding: 0 85px 0 10px; /* Adjusted padding for consistent spacing */
+    height: 150px;
+}
+
+.contactinfo a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    background-color: transparent;
+}
+
+.contactinfo a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+h2 + a {
+    display: block;
+    margin-top: 10px;
+}
+
+#icond, #icondd {
+    padding-top: 5px;
+    border-radius: 50%;
+}
+
+#icond:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+#icondd:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+
+#icond {
+    margin-left: 350px;
+}
+
+.footer {
+    background-color: lightgreen;
+    width: 70%;
+    margin: 10px auto; /* Added margin to create space at the top */
+    padding: 10px 30px 5px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
