@@ -56,7 +56,6 @@ a {
 /* Button Styling */
 #icon {
     height: 25px; /* Default desktop size */
-    transition: all 0.3s ease;
 }
 
 /* Responsive Styles */
@@ -104,7 +103,6 @@ a {
     }
 }
 
-
 #icon:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease;
@@ -141,34 +139,6 @@ a {
     padding-right: 260px;
 }
 
-
-
-/* Responsive styles for tablets */
-@media (max-width: 768px) {
-    .container {
-        width: 95%; /* Adjust width for better spacing */
-        flex-wrap: wrap; /* Allows elements to wrap instead of squeezing */
-    }
-
-    .column1, .column2 {
-        width: 85%; /* Make columns full-width */
-        padding: 10px; /* Adjust padding */
-        text-align: center; /* Center text */
-    }
-}
-
-/* Responsive styles for mobile */
-@media (max-width: 480px) {
-    .container {
-        width: 85%; /* Use more screen space on smaller screens */
-    }
-
-    .column1, .column2, .column3 {
-        width: 90%;
-        padding: 8px;
-    }
-}
-
 #language-icon:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease;
@@ -203,20 +173,6 @@ a {
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* Responsive styles for smaller screens */
-@media (max-width: 768px) {
-    .experienceTab p {
-        font-size: large; /* Reduce font size for tablets */
-    }
-}
-
-@media (max-width: 480px) {
-    .experienceTab p {
-        font-size: medium; /* Further reduce font size for mobile screens */
-    }
-}
-
-
 .experience {
     width: 74%;
     margin: 1px auto; /* Added margin to create space between header and container */
@@ -249,42 +205,6 @@ a {
     border-radius: 10px;
     margin-top: 10px;
     padding: 5px 85px 5px 10px; /* Adjusted padding for consistent spacing */
-}
-
-/* Responsive styles for tablets and mobile screens */
-@media (max-width: 768px) {
-    .experience {
-        flex-direction: column; /* Stack items vertically on mobile */
-        align-items: center; /* Center align items */
-        width: 96%; /* Adjust container width */
-    }
-
-    .tab1 {
-        width: 86%; /* Make tab1 take full width */
-        padding: 10px; /* Adjust padding */
-        margin-left: 0; /* Remove left margin */
-        text-align: center; /* Center text */
-    }
-
-    /* Resize tab1's image dynamically */
-    .tab1 img {
-        width: 80%; /* Scale image down while maintaining aspect ratio */
-        height: auto; /* Keep aspect ratio */
-        max-width: 300px; /* Set a max width */
-    }
-
-    /* Completely hide tab2 on mobile */
-    .tab2 {
-        display: none;
-    }
-}
-
-/* Further refinements for smaller mobile screens */
-@media (max-width: 480px) {
-    .tab1 img {
-        width: 70%; /* Make it smaller on extra small screens */
-        max-width: 250px; /* Set a max width */
-    }
 }
 
 .experience #tab1img{
@@ -363,14 +283,16 @@ a {
 .contactimg {
     background-color: lightgreen;
     border-radius: 10px;
-    height: 150px;
-    width: 150px;
     object-fit: cover;
     margin-right: 10px;
+    height: 100px;
+    width: 100px;
 }
 
 .contactimg img {
     border-radius: 10px;
+    height: 100px;
+    width: 100px; 
 }
 
 /* Contact info box */
@@ -379,7 +301,7 @@ a {
     width: 1000px;
     border-radius: 10px;
     padding: 0 15px 0 10px; /* Adjusted padding for consistent spacing */
-    height: 150px;
+    height: 100px;
 }
 
 /* Ensure links are properly styled */
@@ -394,52 +316,6 @@ a {
 .contactinfo a:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
-}
-
-/* Responsive styles for tablets and mobile screens */
-@media (max-width: 768px) {
-    .contact {
-        width: 85%; /* Adjust width for better fit */
-        display: flex;
-        justify-content: center; /* Center elements */
-    }
-
-    /* Hide the contact image on mobile */
-    .contactimg,
-    #icond {
-        display: none;
-    }
-
-    /* Adjust .contactinfo for smaller screens */
-    .contactinfo {
-        width: 100%; /* Make it take full width */
-        padding: 15px; /* Adjust padding for better fit */
-        text-align: center; /* Center the text */
-        height: auto; /* Allow height to adjust */
-    }
-}
-
-/* Further adjustments for very small screens */
-@media (max-width: 480px) {
-    .contact {
-        width: 85%; /* More space on tiny screens */
-    }
-
-    .contactinfo {
-        width: 100%;
-        padding: 10px; /* Reduce padding for small screens */
-    }
-}
-
-/* Icon styles */
-#icond, #icondd {
-    padding-top: 5px;
-    border-radius: 50%;
-    justify-content: space-between;
-}
-
-#icond {
-    margin-left: 370px;
 }
 
 /* Style for h2-title */
@@ -468,27 +344,6 @@ h2 + a {
 h2 + a:hover {
     background-color: black; /* Changes background on hover */
     color: lightgreen; /* Changes text color to white on hover */
-}
-
-
-#icond:hover,
-#icondd:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s ease;
-}
-
-@media (max-width: 768px) {
-    #icon:hover,
-    #language-icon:hover,
-    .tab1:hover,
-    .tab2:hover,
-    .contactinfo a:hover,
-    #icond:hover,
-    #icondd:hover {
-        transform: none !important;
-        box-shadow: none !important;
-        transition: none !important;
-    }
 }
 
 .footer {
@@ -531,7 +386,7 @@ h2 + a:hover {
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 480px) {
     #hello-text {
         font-size: 1.5em;
     }
@@ -540,4 +395,45 @@ h2 + a:hover {
 @keyframes flash {
     0%, 100% { opacity: 0; }
     50% { opacity: 1; }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    max-width: 200px; /* Set a maximum width, so it doesn’t stretch too far */
+    width: auto; /* Allow the width to resize based on text */
+    background-color: black;
+    color: lightgreen;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px; /* Add some padding for spacing */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for both opacity and scaling */
+    pointer-events: none; /* Prevent mouse interactions with the tooltip text */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) scale(1.1); /* Keep the scaling effect when hovered */
+}
+
+.tooltip .tooltiptext:hover {
+    visibility: visible; /* Keep visible when hovering over the tooltip itself */
+    opacity: 1; /* Ensure the tooltip stays visible when hovering over it */
+    transform: translateX(-50%) scale(1.1); /* Keep the scaling effect when hovered */
 }
