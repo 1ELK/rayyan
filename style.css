@@ -312,25 +312,23 @@ transform: translateZ(0);
     transition: transform 0.3s ease;
 }
 
-/* Style for h2-title */
 #h2-title {
     text-align: center;
-    font-size: x-large; /* You can also use a more specific size like 32px for consistency */
-    font-weight: bold; /* Optional: Makes the title bold */
-    margin-bottom: 15px; /* Adds space below the title */
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
-/* Style for anchor tag that comes right after h2 */
 h2 + a {
     display: block;
-    margin: 10px auto; /* Centers the anchor horizontally */
-    width: fit-content; /* Makes the link width just fit its content */
-    color: #007bff; /* Adds a color to the link */
-    text-decoration: none; /* Removes underline from the link */
-    font-size: 1.1em; /* Slightly larger font size for emphasis */
-    padding: 5px 10px; /* Adds some padding around the link */
-    border: 1px solid black; /* Optional: Adds a border to the link */
-    border-radius: 5px; /* Rounds the corners of the link */
+    margin: 10px auto;
+    width: fit-content;
+    color: #007bff;
+    text-decoration: none; 
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
     transition: background-color 0.3s;
     transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
     box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
