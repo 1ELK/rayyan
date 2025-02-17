@@ -127,12 +127,6 @@ a {
     padding: 5px 85px 5px 10px; /* Adjusted padding for consistent spacing */
 }
 
-.tab1:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .tab2 {
     background-color: lightgreen;
     width: 40%;
@@ -141,6 +135,12 @@ a {
     margin-left: 10px; /* Added margin to create space between tabs */
     padding: 5px 85px 5px 10px; /* Adjusted padding for consistent spacing */
     pointer-events: none; /* Disabled pointer events to prevent hover effect */
+}
+
+.tab1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tab2:hover {
