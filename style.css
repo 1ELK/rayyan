@@ -122,21 +122,8 @@ a {
     background-color: lightgreen;
     width: 55%;
     border-radius: 10px;
-    margin: 10px;
-}
-
-.column1 {
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-left: 25px;
-    padding-right: 260px;
-}
-
-.column2 {
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-left: 25px;
-    padding-right: 260px;
+    margin: 10px 10px 0 10px;
+    padding: 5px 260px 5px 25px
 }
 
 #language-icon:hover {
@@ -145,37 +132,34 @@ a {
 }
 
 #avatar {
-    padding-bottom: 5px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px 10px 5px 10px;
     display: block;
-    margin: 0 auto;
     border-radius: 20px;
     width: 345px;
     height: 335px;
     object-fit: cover;
     text-align: center;
+    margin: 0 0 0 0;
 }
 
 .experienceTab {
     background-color: lightgreen;
-    width: 70%;
+    width: 74%;
     margin: 0 auto;
-    padding: 5px 30px  5px 30px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .experienceTab p {
     text-align: center;
     font-size: xx-large;
     font-family: 'Courier New', Courier, monospace;
+    padding: 20px 0 20px 0;
+    margin: 6px 0 6px 0;
 }
 
 .experience {
     width: 74%;
-    margin: 1px auto; /* Added margin to create space between header and container */
+    margin: 0 auto; /* Added margin to create space between header and container */
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -183,19 +167,12 @@ a {
 
 .tab1 {
     background-color: lightgreen;
-    width: 40%;
-    border-radius: 10px;
-    margin-top: 10px;
-    padding: 5px 85px 5px 10px; /* Adjusted padding for consistent spacing */
+    margin: 5px 0 5px 0;
 }
 
 .tab2 {
     background-color: lightgreen;
-    width: 40%;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-left: 10px; /* Added margin to create space between tabs */
-    padding: 5px 85px 5px 10px; /* Adjusted padding for consistent spacing */
+    margin: 5px 0 5px 10px;
     pointer-events: none; /* Disabled pointer events to prevent hover effect */
 }
 
@@ -203,7 +180,6 @@ a {
     background-color: lightgreen;
     width: 40%;
     border-radius: 10px;
-    margin-top: 10px;
     padding: 5px 85px 5px 10px; /* Adjusted padding for consistent spacing */
 }
 
@@ -257,17 +233,17 @@ a {
 
 .contacttab {
     background-color: lightgreen;
-    width: 70%;
-    margin: 10px auto; /* Added margin to create space at the top */
-    padding: 20px 30px 5px 30px;
+    width: 74%;
+    margin: 0 auto; /* Added margin to create space at the top */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .contacttab p {
     text-align: center;
     font-size: xx-large;
     font-family:'Courier New', Courier, monospace;
+    padding: 20px 0 20px 0;
+    margin: 6px 0 6px 0;
 }
 
 .contact {
@@ -284,7 +260,7 @@ a {
     background-color: lightgreen;
     border-radius: 10px;
     object-fit: cover;
-    margin-right: 10px;
+    margin: 5px 10px 0 0;
     height: 100px;
     width: 100px;
 }
@@ -292,7 +268,7 @@ a {
 .contactimg img {
     border-radius: 10px;
     height: 100px;
-    width: 100px; 
+    width: 100px;
 }
 
 /* Contact info box */
@@ -302,6 +278,7 @@ a {
     border-radius: 10px;
     padding: 0 15px 0 10px; /* Adjusted padding for consistent spacing */
     height: 100px;
+    margin: 5px 0 0 0;
 }
 
 /* Ensure links are properly styled */
