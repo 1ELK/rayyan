@@ -6,7 +6,7 @@
 body {
     background-color: black;
     margin: 0;
-    padding: 0;
+    padding: 10px 0 0 0;
 }
 
 /* Navigation Bar */
@@ -16,7 +16,7 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px;
 }
 
 ul {
@@ -47,7 +47,7 @@ a {
     background-color: lightgreen;
     width: 70%;
     margin: 0 auto;
-    padding: 30px;
+    padding: 0 30px 0 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -120,7 +120,7 @@ a {
     justify-content: space-between;
 }
 
-.column1, .column2, .column3 {
+.column1, .column2 {
     background-color: lightgreen;
     width: 55%;
     border-radius: 10px;
@@ -131,31 +131,26 @@ a {
     padding-bottom: 5px;
     padding-top: 5px;
     padding-left: 25px;
-    padding-right: 225px;
+    padding-right: 260px;
 }
 
 .column2 {
     padding-bottom: 5px;
     padding-top: 5px;
     padding-left: 25px;
-    padding-right: 225px;
+    padding-right: 260px;
 }
 
-.column3 {
-    padding-bottom: 70px;
-    padding-top: 5px;
-    padding-left: 60px;
-    padding-right: 110px;
-}
+
 
 /* Responsive styles for tablets */
 @media (max-width: 768px) {
     .container {
-        width: 85%; /* Adjust width for better spacing */
+        width: 95%; /* Adjust width for better spacing */
         flex-wrap: wrap; /* Allows elements to wrap instead of squeezing */
     }
 
-    .column1, .column2, .column3 {
+    .column1, .column2 {
         width: 85%; /* Make columns full-width */
         padding: 10px; /* Adjust padding */
         text-align: center; /* Center text */
@@ -165,7 +160,7 @@ a {
 /* Responsive styles for mobile */
 @media (max-width: 480px) {
     .container {
-        width: 90%; /* Use more screen space on smaller screens */
+        width: 85%; /* Use more screen space on smaller screens */
     }
 
     .column1, .column2, .column3 {
@@ -180,12 +175,15 @@ a {
 }
 
 #avatar {
+    padding-bottom: 5px;
     padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: block;
     margin: 0 auto;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    border-radius: 20px;
+    width: 345px;
+    height: 335px;
     object-fit: cover;
     text-align: center;
 }
@@ -305,8 +303,6 @@ a {
     display: block;
     margin: 0 auto;
     border-radius: 20px;
-   /* width: 460px;
-    height: 250px;*/
     width: 250px;
     height: 250px;
     object-fit: cover;
@@ -343,7 +339,7 @@ a {
     background-color: lightgreen;
     width: 70%;
     margin: 10px auto; /* Added margin to create space at the top */
-    padding: 10px 30px 5px 30px;
+    padding: 20px 30px 5px 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -356,7 +352,7 @@ a {
 
 .contact {
     width: 74%;
-    margin: 1px auto; /* Creates space between header and container */
+    margin: 0px auto; /* Creates space between header and container */
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -375,17 +371,14 @@ a {
 
 .contactimg img {
     border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 /* Contact info box */
 .contactinfo {
     background-color: lightgreen;
-    width: 734px;
+    width: 1000px;
     border-radius: 10px;
-    padding: 0 195px 0 10px; /* Adjusted padding for consistent spacing */
+    padding: 0 15px 0 10px; /* Adjusted padding for consistent spacing */
     height: 150px;
 }
 
@@ -442,12 +435,12 @@ a {
 #icond, #icondd {
     padding-top: 5px;
     border-radius: 50%;
+    justify-content: space-between;
 }
 
 #icond {
-    margin-left: 350px;
+    margin-left: 370px;
 }
-
 
 /* Style for h2-title */
 #h2-title {
