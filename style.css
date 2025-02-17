@@ -331,13 +331,18 @@ h2 + a {
     padding: 5px 10px; /* Adds some padding around the link */
     border: 1px solid black; /* Optional: Adds a border to the link */
     border-radius: 5px; /* Rounds the corners of the link */
-    transition: background-color 0.3s; /* Adds transition effect for hover */
+    transition: background-color 0.3s;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    /* Add translateZ to leverage GPU acceleration */
+    transform: translateZ(0);
 }
 
 /* Hover effect for the link */
 h2 + a:hover {
     background-color: black; /* Changes background on hover */
     color: lightgreen; /* Changes text color to white on hover */
+    transform: scale(1.1) translateZ(0);
 }
 
 .footer {
