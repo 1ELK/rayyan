@@ -62,7 +62,7 @@ a {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .header {
-        width: 90%; /* Slightly wider for mobile */
+        width: 85%; /* Slightly wider for mobile */
         padding: 20px;
     }
 
@@ -86,7 +86,7 @@ a {
 
 @media (max-width: 480px) {
     .header {
-        width: 95%;
+        width: 85%;
         padding: 15px;
     }
 
@@ -151,12 +151,12 @@ a {
 /* Responsive styles for tablets */
 @media (max-width: 768px) {
     .container {
-        width: 90%; /* Adjust width for better spacing */
+        width: 85%; /* Adjust width for better spacing */
         flex-wrap: wrap; /* Allows elements to wrap instead of squeezing */
     }
 
     .column1, .column2, .column3 {
-        width: 100%; /* Make columns full-width */
+        width: 85%; /* Make columns full-width */
         padding: 10px; /* Adjust padding */
         text-align: center; /* Center text */
     }
@@ -165,11 +165,11 @@ a {
 /* Responsive styles for mobile */
 @media (max-width: 480px) {
     .container {
-        width: 95%; /* Use more screen space on smaller screens */
+        width: 90%; /* Use more screen space on smaller screens */
     }
 
     .column1, .column2, .column3 {
-        width: 100%;
+        width: 90%;
         padding: 8px;
     }
 }
@@ -258,11 +258,11 @@ a {
     .experience {
         flex-direction: column; /* Stack items vertically on mobile */
         align-items: center; /* Center align items */
-        width: 90%; /* Adjust container width */
+        width: 96%; /* Adjust container width */
     }
 
     .tab1 {
-        width: 100%; /* Make tab1 take full width */
+        width: 86%; /* Make tab1 take full width */
         padding: 10px; /* Adjust padding */
         margin-left: 0; /* Remove left margin */
         text-align: center; /* Center text */
@@ -288,7 +288,6 @@ a {
         max-width: 250px; /* Set a max width */
     }
 }
-
 
 .experience #tab1img{
     padding: 10px;
@@ -390,6 +389,7 @@ a {
     height: 150px;
 }
 
+/* Ensure links are properly styled */
 .contactinfo a {
     text-decoration: none;
     color: black;
@@ -397,48 +397,88 @@ a {
     background-color: transparent;
 }
 
-/* Hide image on mobile screens */
-@media (max-width: 768px) {
-    .contactimg {
-        display: none;
-    }
-
-    .contact {
-        width: 90%; /* Adjust width for smaller screens */
-    }
-
-    .contactinfo {
-        width: 100%;
-        padding: 15px;
-        text-align: center; /* Center the text for better readability */
-    }
-}
-
+/* Hover effect for links */
 .contactinfo a:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
 
-#h2-title {
-    text-align: center;
-    font-size: x-large;
+/* Responsive styles for tablets and mobile screens */
+@media (max-width: 768px) {
+    .contact {
+        width: 85%; /* Adjust width for better fit */
+        display: flex;
+        justify-content: center; /* Center elements */
+    }
+
+    /* Hide the contact image on mobile */
+    .contactimg,
+    #icond {
+        display: none;
+    }
+
+    /* Adjust .contactinfo for smaller screens */
+    .contactinfo {
+        width: 100%; /* Make it take full width */
+        padding: 15px; /* Adjust padding for better fit */
+        text-align: center; /* Center the text */
+        height: auto; /* Allow height to adjust */
+    }
 }
 
-h2 + a {
-    display: block;
-    margin-top: 10px;
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    .contact {
+        width: 85%; /* More space on tiny screens */
+    }
+
+    .contactinfo {
+        width: 100%;
+        padding: 10px; /* Reduce padding for small screens */
+    }
 }
 
+/* Icon styles */
 #icond, #icondd {
     padding-top: 5px;
     border-radius: 50%;
 }
 
-#icond:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s ease;
+#icond {
+    margin-left: 350px;
 }
 
+
+/* Style for h2-title */
+#h2-title {
+    text-align: center;
+    font-size: x-large; /* You can also use a more specific size like 32px for consistency */
+    font-weight: bold; /* Optional: Makes the title bold */
+    margin-bottom: 15px; /* Adds space below the title */
+}
+
+/* Style for anchor tag that comes right after h2 */
+h2 + a {
+    display: block;
+    margin: 10px auto; /* Centers the anchor horizontally */
+    width: fit-content; /* Makes the link width just fit its content */
+    color: #007bff; /* Adds a color to the link */
+    text-decoration: none; /* Removes underline from the link */
+    font-size: 1.1em; /* Slightly larger font size for emphasis */
+    padding: 5px 10px; /* Adds some padding around the link */
+    border: 1px solid black; /* Optional: Adds a border to the link */
+    border-radius: 5px; /* Rounds the corners of the link */
+    transition: background-color 0.3s; /* Adds transition effect for hover */
+}
+
+/* Hover effect for the link */
+h2 + a:hover {
+    background-color: black; /* Changes background on hover */
+    color: lightgreen; /* Changes text color to white on hover */
+}
+
+
+#icond:hover,
 #icondd:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease;
@@ -456,11 +496,6 @@ h2 + a {
         box-shadow: none !important;
         transition: none !important;
     }
-}
-
-
-#icond {
-    margin-left: 350px;
 }
 
 .footer {
