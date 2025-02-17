@@ -56,6 +56,10 @@ a {
 /* Button Styling */
 #icon {
     height: 25px; /* Default desktop size */
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+/* Add translateZ to leverage GPU acceleration */
+transform: translateZ(0);
 }
 
 /* Responsive Styles */
@@ -104,9 +108,7 @@ a {
 }
 
 #icon:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s ease;
-
+    transform: scale(1.1) translateZ(0);
 }
 
 /* Default desktop styles remain the same */
@@ -126,9 +128,15 @@ a {
     padding: 5px 260px 5px 25px
 }
 
+.column2 {
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+/* Add translateZ to leverage GPU acceleration */
+transform: translateZ(0);
+}
+
 #language-icon:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s ease;
+    transform: scale(1.1) translateZ(0);
 }
 
 #avatar {
@@ -168,12 +176,22 @@ a {
 .tab1 {
     background-color: lightgreen;
     margin: 5px 0 5px 0;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    /* Add translateZ to leverage GPU acceleration */
+    transform: translateZ(0);
+    will-change: transform, box-shadow;
 }
 
 .tab2 {
     background-color: lightgreen;
     margin: 5px 0 5px 10px;
     pointer-events: none; /* Disabled pointer events to prevent hover effect */
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    /* Add translateZ to leverage GPU acceleration */
+    transform: translateZ(0);
+    will-change: transform, box-shadow;
 }
 
 .tab1, .tab2 {
@@ -183,7 +201,7 @@ a {
     padding: 5px 85px 5px 10px; /* Adjusted padding for consistent spacing */
 }
 
-.experience #tab1img{
+.tab1 #tab1img{
     padding: 10px;
     display: block;
     margin: 0 auto;
@@ -218,11 +236,10 @@ a {
     font-family:'Courier New', Courier, monospace;
     display: inline;
 }
-
+  
 .tab1:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.1) translateZ(0);  /* Maintain 3D acceleration */
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
 }
 
 .tab2:hover {
