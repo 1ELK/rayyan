@@ -5,7 +5,6 @@
 
 body {
     background-color: black;
-    margin: 0;
     padding: 10px 0 0 0;
 }
 
@@ -372,7 +371,150 @@ h2 + a:hover {
     transform: translateX(-50%) scale(1.1); /* Keep the scaling effect when hovered */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+
+    body{
+        padding: 50px 0 0 0;
+    }
+
+    .header {
+        width: 77%;
+        padding: 15px;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .column1 {
+        background-color: lightgreen;
+        width: 60%;
+        height: 30%;
+        border-radius: 10px;
+        margin: 10px 0 0 0;
+        padding: 5px 208px 26px 25px
+    }
+
+    .column1 span {
+        font-size: 7px;
+        margin: 0 0 0 0;
+    }
+
+    .column1 img {
+        margin: 0 0 0 0;
+    }
+
+    .column1 h1{
+        font-size: 20px;
+        padding: 1px;
+        margin: 0 0 0 0;
+    }
+
+    .column1 p{
+        padding: 2px 0 0 0;
+        font-size: 15px;
+        margin: 0 0 0 0;
+    }
+
+    .column2 {
+        background-color: lightgreen;
+        width: 60%;
+        height: 30%;
+        border-radius: 10px;
+        margin: 10px 0 0 0;
+        padding: 5px 208px 20px 25px
+    }
+
+    .column2 h2{
+        font-size: 15px;
+        padding: 1px;
+        margin: 5px 0 10px 0;
+    }
+
+    .column2 img{
+        height: 50px;
+        width: 50px;
+        margin: 0 0 5px 0;
+    }
+
+    #avatar {
+        display: block;
+        border-radius: 10px;
+        width: 200px;
+        height: 220px;
+        object-fit: cover;
+        text-align: center;
+        margin: 10px 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .experienceTab {
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+        justify-content: space-between;
+    }
+
+    .experienceTab p {
+        font-size: x-large;
+        padding: 20px 0 20px 0;
+    }
+
+    .experience {
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tab1 {
+        width: 50%;
+        padding: 5px 395px 5px 10px;
+    }
+
+    .tab1 #tab1img{
+        width: 775px;
+        height: 300px;
+    }
+
+    .tab2 {
+        display: none;
+    }
+
+    .contacttab {
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    .contacttab p {
+        font-size: x-large;
+        padding: 20px 0 20px 0;
+    }
+
+    .contact {
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer {
+        background-color: lightgreen;
+        width: 75%;
+        margin: 10px auto; /* Added margin to create space at the top */
+        padding: 10px 30px 5px 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
     #hello-text {
         font-size: 2em;
     }
