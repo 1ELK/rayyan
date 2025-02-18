@@ -62,51 +62,6 @@ a {
 transform: translateZ(0);
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .header {
-        width: 85%; /* Slightly wider for mobile */
-        padding: 20px;
-    }
-
-    nav {
-        padding: 5px; /* Reduce padding */
-    }
-
-    /* Shrink logo and icons on smaller screens */
-    #logo {
-        height: 35px; /* Make logo smaller */
-    }
-
-    #icon {
-        height: 18px; /* Make buttons smaller */
-    }
-
-    ul li {
-        margin: 3px; /* Reduce spacing */
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        width: 85%;
-        padding: 15px;
-    }
-
-    nav {
-        padding: 5px;
-    }
-
-    /* Further shrink for very small screens */
-    #logo {
-        height: 30px;
-    }
-
-    #icon {
-        height: 15px;
-    }
-}
-
 #icon:hover {
     transform: scale(1.1) translateZ(0);
 }
@@ -376,24 +331,6 @@ h2 + a:hover {
     text-align: center;
 }
 
-/* Adjust font size for mobile screens */
-@media (max-width: 768px) {
-    #hello-text {
-        font-size: 2em;
-    }
-}
-
-@media (max-width: 480px) {
-    #hello-text {
-        font-size: 1.5em;
-    }
-}
-
-@keyframes flash {
-    0%, 100% { opacity: 0; }
-    50% { opacity: 1; }
-}
-
 .tooltip {
     position: relative;
     display: inline-block;
@@ -433,4 +370,41 @@ h2 + a:hover {
     visibility: visible; /* Keep visible when hovering over the tooltip itself */
     opacity: 1; /* Ensure the tooltip stays visible when hovering over it */
     transform: translateX(-50%) scale(1.1); /* Keep the scaling effect when hovered */
+}
+
+@media (max-width: 768px) {
+    #hello-text {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        width: 85%;
+        padding: 15px;
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    /* Further shrink for very small screens */
+    #logo {
+        height: 30px;
+    }
+
+    #icon {
+        height: 15px;
+    }
+
+    #hello-text {
+        font-size: 1.5em;
+    }
+}
+
+/* Adjust font size for mobile screens */
+
+@keyframes flash {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
 }
